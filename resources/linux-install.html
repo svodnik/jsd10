@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JSD9 - Linux installation instructions</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container pad">
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="container blueheader">
+                <h1 id="configuringyourmacsystem">Configuring Your Linux System</h1>
+            </div>
+
+            <div class="light-blue-bg container push-bottom">
+                <h2 id="tools">1. Install command line tools</h2>
+        
+                <p>You will need to install certain tools that will be used throughout the course.</p>
+                
+                <ol>
+                <li><p><strong>Install a text editor</strong></p>
+                
+                <p>Visual Studio Code can be found <a href="http://code.visualstudio.com">here</a> and is available for all platforms, but you are free to use any code editor you choose. Popular choices include <a href="http://atom.io">Atom</a> and <a href="https://sublimetext.com/3">Sublime Text</a>.</p></li>
+                
+                <li><p><strong>Install Git</strong></p>
+                
+                <p>Git is a tool used to track the state of your code over time. <a href="https://github.com">GitHub</a> is a company that has made a business on top of the Git technology. We will be using both Git and GitHub in this class to distribute code, submit assignments and offer feedback.</p>
+                
+                <p>Git can be installed by running the following command:</p>
+                
+                <pre><code class="bash language-bash">sudo apt-get install build-essential git-core curl</code></pre></li>
+                
+                <li><p><strong>Configure Git</strong></p>
+                
+                <p>Copy and paste the following two commands (separately) into your terminal. Replace the name and email address values with your own.</p>
+                
+<pre><code class="bash language-bash">git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR EMAIL ADDRESS"
+git config --global core.editor "code -w"</code></pre>
+                
+                <p>(source: <a href="https://help.github.com/articles/set-up-git/">GitHub</a>)</p>
+                
+                <p>Note that the third command applies only if you're using Visual Studio Code.</p>
+                
+                <p>If you're using Sublime, type the following instead:     </p>
+                
+                <pre><code class="bash language-bash">git config --global core.editor "subl -n -w"</code></pre>
+                
+                <p>If you're using Atom, type the following instead: </p>
+                
+                <pre><code class="bash language-bash">git config --global core.editor "atom -w"</code></pre></li>
+                
+                <li><p><strong>Install Node.js</strong></p>
+                
+<pre><code class="bash language-bash">curl --silent --location https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install --yes nodejs
+apt-get install --yes build-essential</code></pre>
+                
+                <p>When you’re done, raise your hand and ask a member of the instructional team to verify that the installation was successful.
+                Then complete the instructions in the section <em>2. Setting up GitHub</em> below.</p></li>
+                </ol>
+            </div>
+
+            <div class="light-blue-bg container push-bottom">
+                <h2 id="github">2. Set Up GitHub</h2>
+        
+                <p>We will be using the GitHub service to share some of our code. We will learn
+                about the underlying technology of GitHub known as <code>git</code> in the next lesson.</p>
+                
+                <ul>
+                <li>Create an account at http://github.com</li>
+                
+                <li>Follow <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">these
+                instructions</a>
+                to create a new <em>SSH Key</em> (a special, very secure, key which allows your
+                laptop access to your github account without having to remember your github
+                password)</li>
+                
+                <li>Add your new SSH Key to GitHub following <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">these
+                instructions</a></li>
+                
+                <li>Verify your key works by running the following:</li>
+                </ul>
+                
+                <pre><code class="bash language-bash">ssh git@github.com</code></pre>
+                
+                <p>You should see output similar to:</p>
+                
+                <p><code>
+                Hi &lt;you&gt;! You've successfully authenticated, but GitHub does not provide shell access.
+                Connection to github.com closed.
+                </code></p>
+            </div>
+
+            <div class="light-blue-bg container push-bottom">
+                <h2 id="tips">Helpful Debugging Tips</h1>
+        
+                <p><strong>Error installing due to permissions</strong></p>
+                
+                <p>Permissions issues are common when installing programs on the terminal. In order to install command line utilities, you need to be signed into a user account on your computer with administrator-level rights. If you have trouble with this, please ask a member of the instructional team for help.</p>
+                
+                <p><strong>Google is your friend</strong></p>
+                
+                <p>Even experienced programmers occasionally need to look up error messages on Google. If you experience an error, it’s likely that someone else has experienced the error, as well. To find the fix, copy and paste the error message into Google, but remove content specific to your computer to ensure the accuracy of your search. You will most likely find a reference to your specific error. StackOverflow is a trustworthy reference.</p>
+                
+                <p><strong>Common Issues and Fixes:</strong></p>
+                
+                <p>We recommend the following remedies to issues that commonly arise during the installation of command line utilities:</p>
+                
+                <ul>
+                <li><p>Mac users may run into the problem of an outdated version of Git installed with Xcode being given precedence in the terminal. If you experience this issue, you’ll need to adjust your shell path by following the instructions under "Trumping Xcode's Older Git" <a href="http://coolestguidesontheplanet.com/install-update-latest-version-git-mac-osx-10-9-mavericks/">in this article</a>.</p></li>
+                
+                <li><p>Mac users running OS 10.11 or later may need to <a href="http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/">disable the System Integrity Protection</a> on their machine before installing certain command line utilities.</p></li>
+                
+                <li><p>Students experiencing an EACCES error should change directory permissions to install Node and npm without the need to use sudo:
+                <code>sudo chown -R $(whoami) /usr/local/lib/node_modules</code></p></li>
+                
+                <li><p>Students with Homebrew installed on their machines should run <code>brew update</code> in order to get the latest version of Homebrew.</p></li>
+                
+                <li><p>Students who need to update their installations of npm can run <code>npm install -g npm</code>.</p></li>
+                
+                <li><p>Students with an existing, outdated installation of Node can update their install by following the directions above (i.e., using the package installer).</p></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

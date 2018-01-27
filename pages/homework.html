@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GA SF JSD 10 Homework</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">
+					<img src="../img/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="lessons.html">Lessons</a></li>
+					<li class="active"><a href="pages/homework.html">Homework</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="projects.html">Projects Overview</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="slackbot.html">Slackbot</a></li>
+							<li><a href="feedr.html">Feedr</a></li>
+							<li><a href="final-project.html">Final</a></li>
+						</ul>
+					</li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="https://goo.gl/forms/LQeYcI6ODiG9lt083" target="_blank">Exit Ticket</a></li>
+					<li><a href="https://codesnacks.youcanbook.me" target="_blank">Snack Signup</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="blueheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>HOMEWORK</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-center">Below you will find homework assignments; these are assigned on Wednesday and due the following Monday. This page will be updated weekly.
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="light-blue-bg">
+<!--		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 01</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 2/12</h3>
+					<ol class="push-bottom">
+						<li>Finish the prework:
+							<ol>
+								<li>Complete all three of the lessons in Codecademy's <a href="https://www.codecademy.com/en/tracks/javascript-upgraded">JavaScript Fundamentals</a> track. (2-3 hours)</li>
+								<li>Complete CodeSchool's <a href="https://try.github.io/levels/1/challenges/1">Try Git exercise</a>. (30-60 minutes)</li>
+							</ol>
+						</li>
+						<li>Complete units 1 and 2 from Codecademy's <a href="https://www.codecademy.com/learn/learn-the-command-line">Learn the Command Line</a> (ignore paid content) (30-60 minutes)</li>
+						<li>Codecademy <a href="https://www.codecademy.com/courses/functions-in-javascript-2-0/0/1">Functions</a> (30-60 minutes)</li>
+						<li>Reading:
+							<ul>
+								<li>Eloquent JavaScript <a href="https://eloquentjavascript.net/01_values.html">Chapter One: Values, Types, and Operators</a></li>
+								<li>Eloquent JavaScript <a href="https://eloquentjavascript.net/02_program_structure.html">Chapter Two: Program Structure</a></li>
+								<li>Eloquent JavaScript <a href="http://eloquentjavascript.net/03_functions.html">Chapter Three: Functions</a></li>
+							</ul>
+						</li>
+					</ol>
+					<hr>
+					<h4>Optional</h4>
+					<p><a href="https://learnpythonthehardway.org/book/appendixa.html">The Command Line Crash Course</a> (2-3 hours)</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 02</div>
+				</div>
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Wednesday 2/21</h3>
+					<ol class="push-bottom">
+						<li><strong>99 Bottles of Beer</strong> (30-90 minutes)
+							<p><code>starter-code</code> &gt; <code>Homework-1</code> &gt; <code>99-bottles-of-beer</code></p>
+						</li>
+						<li><strong>Fizzbuzz</strong> (60 min)
+							<p><code>starter-code</code> &gt; <code>Homework-1</code> &gt; <code>fizzbuzz</code></p>
+							<ol>
+								<li>Construct a <code>for</code> loop that iterates through and <code>console.log</code>s the numbers 1 - 100.</li>
+								<li>Add an <code>if/else</code> statement that logs the string "fizz" if the value being iterated over is divisible by 3; otherwise, log the value.</li>
+								<li>Add an <code>else if</code> clause that logs the string "buzz" if the value being iterated over is divisible by 5.</li>
+								<li>Add an additional <code>else if</code> clause that logs the string "fizzbuzz" if the value being iterated over is divisible by both 3 and 5.</li>
+							</ol>
+						</li>
+						<li><del><strong>Temperature converter</strong> (60-90 min)
+							<p><code>starter-code</code> &gt; <code>Homework-1</code> &gt; <code>temp-converter</code></p>
+							<ol>
+								<li>Create a function that accepts a temperature value in Fahrenheit and converts it to Celsius.</li>
+								<li>Create a second function that accepts a temperature value in Celsius and converts it to Fahrenheit.</li>
+							</ol></del>
+						</li>
+						<li><strong>Reading</strong>
+							<ul>
+								<li>Todd Motto on <a href="https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/">JavaScript scope</a></li>
+								<li>Eloquent JavaScript <a href="http://eloquentjavascript.net/04_data.html">Chapter Four: Objects &amp; Arrays</a></li>
+							</ul>
+						</li>
+					</ol>
+					<hr>
+					<h4>Optional</h4>
+					<ul>
+						<li>
+							<strong>Random address generator</strong> (30-60 min)
+							<p><code>starter-code</code> &gt; <code>Homework-1</code> &gt; <code>BONUS-random-address-generator</code></p>
+						</li>
+						<li>
+							<strong>Madlibs</strong>
+							<p><code>starter-code</code> &gt; <code>Homework-1</code> &gt; <code>BONUS-madlibs</code></p>
+							<p>We haven't covered all of the concepts necessary to complete this project, but we will pick them up over the next few weeks. Identify syntax in the code that you recognize, and research any code you encounter that you don't understand. This project will be due in a few weeks, so if you're looking for a preview of upcoming content, this will give you a head start.</p>	
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 03</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 2/26</h3>
+					<ol class="push-bottom">
+            <li><strong>Temperature converter</strong> (60-90 min)
+              <p><code>starter-code</code> &gt; <code>Homework-2</code> &gt; <code>temp-converter</code></p>
+              <ol>
+                <li>Create a function that accepts a temperature value in Fahrenheit and converts it to Celsius.</li>
+                <li>Create a second function that accepts a temperature value in Celsius and converts it to Fahrenheit.</li>
+              </ol>
+            </li>
+            <li><strong>Read about Hubot</strong> (45 min)
+              <ul>
+                <li><a href="https://hubot.github.com">Hubot Overview</a></li>
+                <li><a href="https://hubot.github.com/docs">Hubot Documentation</a></li>
+              </ul>
+            </li>
+            <li><strong>Interact with the bots in our class Slack organization</strong> (only works in DMs with these bots, or in channels that they are members of, such as <code>#general</code>) (30 min)
+              <ul>
+                <li><code>@slackbot</code>
+                  <ul>
+                    <li>Direct message with a question</li>
+                  </ul>
+                </li>
+                <li><code>@plusplus</code>
+                  <ul>
+                    <li>Add <code>++</code> after the @ name of a user to give them a point</li>
+                    <li>Direct message <code>help</code> to <code>@plusplus</code> to learn other commands to experiment with</li>
+                  </ul>
+                </li>
+                <li><code>giphy</code>
+                  <ul>
+                    <li>Type <code>/giphy</code> and a space, followed by a word </li>
+                    <li><code>giphy</code> responds with an animated GIF related to that word</li>
+                  </ul>
+                </li>
+                <li><code>@snackbot</code></li>
+                  <ul>
+                    <li>Direct message <code>cal</code> to <code>@snackbot</code> for the full snack calendar</li>
+                    <li>Direct message <code>next</code> to <code>@snackbot</code> for info on the next class when someone is signed up to bring snacks</li>
+                  </ul>
+              </ul>
+            </li>
+            <li><strong>Read the <a href="slackbot.html">Project 1 description</a> and start thinking about what you'd like your bot to do.</strong> (We will configure our computers and start building bots in class next week, so no need to start coding yet.) (30 min)</li>
+					</ol>	
+				</div>
+			</div>
+    </div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 04</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 3/5</h3>
+          <ol>
+						<li><strong>Slack bot</strong>
+							<ul>
+								<li>Finish your Slack bot</li>
+								<li>Create a new GitHub repo for your bot, including:
+									<ul>
+										<li>the JS code for your bot</li>
+										<li>updates to the default README.md file that documents what your bot is capable of and how to interact with it</li>
+									</ul>
+								</li>
+								<li>Push your code to your repo, then use Slack to send Sasha a link to the repo</li>
+							</ul>
+						</li>
+            <li><strong>Outline and create objects</strong> (30-60 min)
+                <p><code>starter-code</code> &gt; <code>Homework-3</code> &gt; <code>object-homework</code> folder</p>
+            </li>
+            <li><strong>Convert between JavaScript objects and JSON</strong> (30-60 min)
+                <p><code>starter-code</code> &gt; <code>Homework-3</code> &gt; <code>json-homework</code> folder</p>
+            </li>
+						<li><strong>Reading</strong>
+							<ul>
+								<li>Eloquent JavaScript Chapter Twelve: <a href="http://eloquentjavascript.net/12_browser.html">JavaScript and the Browser</a></li>
+								<li>Eloquent JavaScript Chapter Thirteen: <a href="http://eloquentjavascript.net/13_dom.html">The Document Object Model (DOM)</a></li>
+								<li>Eloquent JavaScript Chapter Fourteen: <a href="http://eloquentjavascript.net/14_event.html">Handling Events</a></li>
+								<li><a href="https://learn.jquery.com/about-jquery/how-jquery-works/">How jQuery Works</a></li>
+								<li>Codecademy <a href="https://www.codecademy.com/learn/jquery">Introducing jQuery</a> (first lesson)</li>
+								<li>jQuery Documentation: <a href="https://learn.jquery.com/events/introduction-to-events/">Introduction to Events</a></li>
+								<li>jQuery Documentation: <a href="https://learn.jquery.com/events/handling-events/">Handling Events</a></li>
+								<li>jQuery Documentation: <a href="https://learn.jquery.com/events/event-delegation/">Understanding Event Delegation</a></li>
+								<li><a href="https://dev.to/sarah_chima/an-introduction-to-es6-template-literals-94l">An Introduction to ES6 Template Literals</a></li>
+							</ul>
+						</li>
+					</ol>	
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 05</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 3/12</h3>
+					<ol class="push-bottom">	
+            <li>
+              <strong>Madlibs</strong> (30-60 min)
+              <p><code>Homework-4</code> &gt;<code>madlib-with-loops</code></p>
+            </li>
+						<li><strong>99 Bottles of Beer in the browser window</strong> (30-60 min)
+							<ul>
+								<li>Remember the 99 Bottles of Beer assignment? For this assignment, you'll be creating a website that programatically displays the lyrics to that song in the browser window.</li>
+								<li>You'll need to create both an HTML file and a JavaScript file.</li>
+								<li>In your HTML file, you'll want to have an unordered list (<code>&lt;ul&gt;</code>) that contains all of your lyrics.</li>
+								<li>Each line of the song should appear inside of a list item (<code>&lt;li&gt;</code>) within that unordered list.</li>
+								<li>Your JavaScript file should programatically append each line of the song to the page--no hard-coding lyrics in HTML!</li>
+								<li>Code this project using vanilla JavaScript methods.</li>
+								<li>Then refactor your code to use jQuery instead (preserving your original code in comments)</li>
+							</ul>
+						</li>
+						<li><strong>Reading</strong> (60-90 min)
+							<ul>
+								<li><a href="https://learn.jquery.com/events/event-delegation/">jQuery: Event delegation</a></li>
+								<li><a href="https://css-tricks.com/lodge/learn-jquery/10-explicit-vs-implicit-iteration/">Implicit vs Explicit Iteration in jQuery</a></li>
+								<li>Eloquent JavaScript <a href="http://eloquentjavascript.net/17_http.html">Chapter Seventeen: HTTP</a></li>
+								<li><a href="http://rve.org.uk/dumprequest">What is an HTTP request?</a></li>
+								<li><a href="https://www.sitepoint.com/use-jquerys-ajax-function/">How to Use jQuery’s $.ajax() Function</a></li>
+								<li>jQuery Documentation <a href="https://learn.jquery.com/ajax/">Ajax</a></li>
+								<li>jQuery Documentation <a href="https://learn.jquery.com/ajax/key-concepts/">Ajax: Key Concepts</a></li>
+								<li>jQuery Documentation <a href="https://learn.jquery.com/ajax/jquery-ajax-methods/">Ajax: Related Methods</a></li>
+							</ul>
+						</li>
+          </ol>
+          <hr>
+          <h4>Optional</h4>
+          <ul>
+            <li>
+              <strong>Dice</strong> (30-60 min)
+              <p><code>Homework-4</code> &gt;<code>BONUS-dice</code></p>
+              <ul>
+                <li>Create an app where every time the user hits the "Roll Dice" button, the screen randomly updates each of the two images to display an image of a die corresponding to the value rolled.</li>
+                <li>Specific instructions in the <code>js</code> &gt; <code>app.js</code> folder</li>
+              </ul>
+            </li>
+          </ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 06</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 3/19</h3>
+					<ol class="push-bottom">
+						<li>
+              <strong>Current weather</strong> (60-90 min)
+              <p><code>Homework-5</code> &gt; <code>ajax-homework</code></p>
+              <p><strong>Be sure to remove your API keys and app keys from your code before pushing to GitHub</strong></p>
+            </li>
+            <li>
+              <strong>Customizable survey form</strong> (90 min-2 hours)
+              <p><code>Homework-5</code> &gt; <code>jquery-homework</code></p>
+            </li>
+            <li><strong>Pre-work for Project 2: Feedr</strong> (2 hours)
+              <p>(Final project due Tuesday 1/9)</p>
+							<ul>
+								<li>Read <a href="feedr.html">project overview</a></li>
+								<li>Research and choose APIs to use</li>
+								<li>Read API documentation for the APIs you've selected</li>
+							</ul>
+						</li>
+						<li><strong>Reading</strong>
+							<ul>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Using Promises</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Using Fetch</a></li>
+								<li><a href="http://helephant.com/2008/08/19/functions-are-first-class-objects-in-javascript/">Functions are first class objects in JavaScript</a></li>
+								<li><a href="https://www.impressivewebs.com/callback-functions-javascript/">Callback Functions in JavaScript</a></li>
+								<li><a href="http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/">Understand JavaScript Callback Functions and Use Them</a></li>
+							</ul>
+						</li>
+					</ol>	
+          <hr>
+          <h4>Optional</h4>
+          <ul>
+            <li><strong>99 Bottles of Beer with jQuery</strong> (30-60 min)
+              <p>Refactor your solution from last week to use jQuery instead of vanilla JS</p> 
+            </li>
+          </ul>
+        </div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 07</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 3/26</h3>
+					<ol class="push-bottom">
+						<li>
+              <strong>Local Landscapes</strong>
+              <p><code>Homework-6</code></p>
+              <p>Complete the Local Landscapes app we started in class.</p>
+							<ul>
+								<li>Using the  (<a href="https://github.com/500px/api-documentation/blob/master/endpoints/photo/GET_photos_search.md">500px API documentation)</a>, customize the search results for the app we created today to do the following:
+								<ul>
+									<li>Sort photo results by rating (highest rated first)</li>
+									<li>Return 28 photos instead of the default 20</li>
+								</ul>
+								<li><strong>Bonus</strong>: Display the current user’s information on the site after a successful login. </li>
+							</ul>
+            </li>
+            <li><strong>Project 2 (Feedr)</strong>
+              <p>Pseudocode the basic API functionality &amp; DOM manipulation code</p>
+            </li>
+						<li><strong>Final project</strong>
+							<ul>
+								<li>Read the <a href="final-project.html">project overview.</a></li>
+								<li>Come up with a basic idea for your final project. Create an outline/project description that details how your project will meet each of the project requirements.</li>
+								<li>Create a list of possible APIs to use.</li>
+							</ul>
+						</li>
+						<li><strong>Reading</strong>
+							<ul>
+								<li><a href="http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/">Understand JavaScript’s “this” With Clarity, and Master It</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">Closures in JavaScript (MDN)</a></li>
+								<li><a href="https://www.w3.org/wiki/JavaScript_best_practices#Avoid_globals">JavaScript Best Practices - Avoid Globals (W3)</a></li>
+								<li><a href="https://css-tricks.com/how-do-you-structure-javascript-the-module-pattern-edition/">Module pattern example (css-tricks.com)</a></li>
+							</ul>
+						</li>
+					</ol>	
+					<p>NOTE: The Project 2 and Final Project tasks are milestones that are meant to help you make incremental progress on these large projects, but do not include work that you must submit with your homework. I strongly encourage you to complete these tasks by the deadline to avoid getting overwhelmed by work as the end of the course approaches. I am also happy to review and discuss your work on your projects at any point.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 08</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 4/2</h3>
+					<ol class="push-bottom">
+						<li>
+              <strong>Project 2 (Feedr)</strong>
+              <p>Completed project due</p>
+              <ul>
+                <li>Send Sasha the URL for your fork of the Feedr repo on GitHub</li>
+                <li>Remember to remove your API keys from your code before pushing to GitHub</li>
+              </ul>
+            </li>
+            <li><strong>Final project milestone</strong>
+              <p>Pseudocode of basic features &amp; draft of HTML/CSS code</p>
+            </li>
+            <li>
+              <strong>Reading</strong>
+              <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">Using data attributes (MDN)</a></li>
+                <li><a href="https://api.jquery.com/data/">Calling a data attribute with jQuery</a></li>
+              </ul>
+            </li>
+          </ol>
+          <hr>
+          <h4>Optional</h4>
+          <ul>
+            <li>
+              <a href="https://codelabs.developers.google.com/codelabs/firebase-web/#0">Firebase Web Codelab</a>
+              <p>This tutorial guides you through building a web application with Firebase. This is a preview of what we'll be doing in class next week.</p>
+            </li>
+            <li>
+              <strong>Reading</strong>
+              <ul>
+                <li><a href="https://youtu.be/O17OWyx08Cg?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL">&#127909; Introducing Firebase video series (videos)</a>, including the following:
+                  <ul>
+                    <li><a href="https://www.youtube.com/watch?v=O17OWyx08Cg&amp;list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL&amp;index=1">&#127909; Introducing Firebase</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=U5aeM5dvUpA&amp;list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL&amp;index=12">&#127909; Introducing Firebase Realtime Database</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=_tyjqozrEPY&amp;index=11&amp;list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL">&#127909; Introducing Firebase Storage</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://firebase.google.com/docs/hosting/">Firebase Hosting guide</a></li>
+                <li><a href="https://youtu.be/jsRVHeQd5kU?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL">&#127909; Introducing Firebase Hosting</a> (video)</li>
+              </ul>
+            </li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+    <div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 09</div>
+				</div>
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 4/9</h3>
+					<ol class="push-bottom">
+						<li>
+              <strong>Final project milestone</strong>
+              <p>Final HTML/CSS code, draft of basic API functionality and DOM manipulation code</p>
+            </li>
+            <li>
+              <strong>Reading</strong>
+              <p><a href="https://reactjs.org/docs/hello-world.html">React Quick Start orientation</a> (12 pages starting with <a href="https://reactjs.org/docs/hello-world.html">Hello World</a> and ending with <a href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React</a>)
+            </li>
+					</ol>	
+				</div>
+			</div>
+		</div>
+
+    <div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">WEEK 10</div>
+				</div>
+
+				<div class="col-md-10 col-offset-2 info-card push-bottom">
+					<h3>Homework: Due Monday 4/16</h3>
+					<ul class="push-bottom">
+						<li>Completed final project &amp; presentation!</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	-->
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p class="col-md-12">
+					Based on a site assembled by <a href="https://github.com/cheshireoctopus">Chandler Moisen</a> and <a href="https://www.linkedin.com/in/maria-stegner-2333b14">Maria Stegner</a> for General Assembly's <a href="https://generalassemb.ly/education/front-end-web-development">Frontend Web Development</a> part-time course. Code for the original site is at <a href="https://github.com/cheshireoctopus/gafewd-portal">https://github.com/cheshireoctopus/gafewd-portal</a> - feel free to fork for your own class.
+				</p>
+			</div>
+		</div>
+	</footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
